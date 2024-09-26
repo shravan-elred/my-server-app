@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 
 export NVM_DIR="$HOME/ .nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -7,4 +8,5 @@ export NVM_DIR="$HOME/ .nvm"
 cd /home/ec2-user/my-server-app
 
 echo "Starting my-server-app!"
+
 pm2 start app.js --name my-server-app
