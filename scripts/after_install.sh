@@ -6,3 +6,7 @@ export NVM_DIR="$HOME/ .nvm"
 
 cd /home/ec2-user/my-server-app
 
+# Install dependencies
+
+pm2 stop my-server-app
+npm install
