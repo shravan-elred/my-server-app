@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo chmod -R 777 /home/ec2-user/my-server-app
+
 if [ ! -d "/home/ec2-user/my-server-app" ]
 then
   mkdir /home/ec2-user/my-server-app
@@ -9,7 +11,7 @@ cd /home/ec2-user/my-app
 echo "Installing Node.js dependencies..."
 
 # Install dependencies
-npm install
+sudo npm install
 
 # Install PM2 globally
-npm install -g pm2
+sudo npm install -g pm2

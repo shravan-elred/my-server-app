@@ -1,4 +1,5 @@
 #!/bin/bash
+
 export PATH=$PATH:/usr/local/bin
 
 export NVM_DIR="$HOME/ .nvm"
